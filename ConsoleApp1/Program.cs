@@ -44,3 +44,26 @@ Console.ForegroundColor=ConsoleColor.Red;
 Console.Write("Perimeter: ");
 Console.ForegroundColor=ConsoleColor.White;
 Console.WriteLine(perimeter);
+//second part finished and I start third part
+await Task.Delay(3000);
+Console.WriteLine("\nTap to start calculating the average of three numbers");
+Console.ReadKey(true);
+await Task.Delay(2000);
+Console.Write("\nNumber(1/3): ");
+var stg1=Console.ReadLine();
+var num1=Convert.ToDouble(stg1);
+Console.Write("Number(2/3): ");
+var stg2=Console.ReadLine();
+var num2=Convert.ToDouble(stg2);
+Console.Write("Number(3/3): ");
+var stg3=Console.ReadLine();
+var num3=Convert.ToDouble(stg3);
+Double average=(num1+num2+num3)/3;
+await Task.Delay(2000);
+Console.Beep(4000,200);
+await Task.Delay(2000);
+Console.ForegroundColor=ConsoleColor.Red;
+Console.Write("\nAverage: ");
+Console.ForegroundColor=ConsoleColor.White;
+Console.WriteLine(average);
+//whole project finished
